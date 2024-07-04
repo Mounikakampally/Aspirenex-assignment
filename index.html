@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        header nav ul li {
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background: #555;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+
+        section#about {
+            background: #fff;
+            text-align: center;
+        }
+
+        section#projects .project {
+            background: #fff;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section#skills ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section#skills ul li {
+            background: #fff;
+            padding: 1rem;
+            margin: 0.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section#contact form {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+            }
+            header nav ul li {
+                margin: 0.5rem 0;
+            }
+            section#skills ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            section#skills ul li {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>My name is Mounika Kampally, and I am currently in my 3rd year of pursuing a B.Tech in Computer Science and Engineering at BVRIT Hyderabad College of Engineering for Women. 
+            I hail from Dindichinthapally, Mandal Vangoor, District Nagarkurnool. 
+            I completed my diploma in Computer Science and Engineering from the Government Institute of Electronics in Secunderabad.
+            I have a deep passion for cooking and find coding to be very interesting. 
+             and my goal is to become a software engineer.
+            I am proficient in Java, HTML, CSS, and have basic knowledge of C++ and SQL.
+        </p>
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+            <h2>Blank removals</h2>
+            <p>The project involves computing the sum of comma-separeted numbers(which can be positive,nagative, or decimals)on each data card.
+                  Using python language</p>
+        </div>
+        <div class="project">
+            <h2>To predict product quality user reviews</h2>
+            <p>Analyzing Flipkart reviews informs users about product quality using machine learning algorithms</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+            <li>Java</li>
+            <li>Web development</li>
+            <li>Dbms</li>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <li>Name:Mounika kampally</li>
+        <li>Phone number:9666371092</li>
+        <li>Email:22wh5a0516@bvrithyderabad.edu.in</li>
+        <li>Person email:mounikakampally@gmail.com</li>
+        
+    </section> 
+    <footer>
+        <p> 2024 Mounika kampally</p>
+    </footer>
+
+    <script>
+        document.querySelector('#contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent!');
+        });
+    </script>
+</body>
+</html>
+
